@@ -1,0 +1,23 @@
+git --version
+git config --global user.name "Anna-joshy"
+git config --global user.mail "annajoshy@karunya.edu.in"
+mkdir gitlab1
+cd gitlab1
+git init
+echo This is m y first experiment . > demo.txt
+git status
+git add .
+git commit -m "Init Commit"
+git log --oneline
+git remote add origin https://.....
+git remote -v
+git push -u origin main
+git checkout -b feature
+git branch
+echo This is my feature branch . >> demo.txt
+git add . 
+git commit -m "Updated demo file"
+git pudh -u origin feature
+//////(merge and pull request in the repository created)
+git checkout main
+git pull origin main
