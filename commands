@@ -17,7 +17,7 @@ git branch
 echo This is my feature branch . >> demo.txt
 git add . 
 git commit -m "Updated demo file"
-git pudh -u origin feature
+git push -u origin feature
 //////(merge and pull request in the repository created)
 git checkout main
 git pull origin main
