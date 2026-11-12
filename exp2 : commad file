@@ -1,4 +1,15 @@
 📝 Step-by-Step Procedure
+
+  COMMANDS:
+
+(in cmd):
+--->  docker --version
+      docker compose version
+      mkdir flask-docker-app
+      cd flask-docker-app
+      code . (vs code will open)
+(inside vs create all these 3 givne below)
+
 ✅ Step 1: Create the Flask App
 app.py
 
@@ -65,3 +76,15 @@ RUN pip install -r requirements.txt
 COPY . .
 EXPOSE 5000
 CMD ["python", "app.py"]
+
+(in cmd):
+
+docker build -t flask-docker-app .
+
+docker login
+
+docker tag flask-docker-app Your Docker Username/flask-docker-app:latest
+
+docker push Your Docker Username/flask-docker-app:latest
+
+(before givig the build command make sure the docker is open and you have created a repository in docker hub also)
